@@ -18,7 +18,7 @@ function modelLoaded(){
 
 function draw() {
     background(51);
-document.getElementById("spansquare").innerHTML="Width And Height Of Square Is"+difference;
+document.getElementById("spansquare").innerHTML="Width And Height Of Square Is "+difference;
 fill("#fcf403");
 stroke("#fcf403");
 square(nosex,nosey,difference);
