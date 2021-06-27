@@ -18,7 +18,7 @@ function modelLoaded(){
 
 function draw() {
     background(51);
-document.getElementById("spansquare").innerHTML="Width And Height Of Square Is "+difference;
+document.getElementById("spansquare").innerHTML="Width And Height Of Square Is "+difference+" Pixels";
 fill("#fcf403");
 stroke("#fcf403");
 square(nosex,nosey,difference);
@@ -29,8 +29,8 @@ function gotResult(result) {
    if(result.length > 0){
 console.log(result);
 nosex=result[0].pose.nose.x;
-nosey=result[0].pose.nose.x;
-console.log("Nose X = "+nosex+"Nose Y = "+nosey);
+nosey=result[0].pose.nose.y;
+console.log("Nose X = "+nosex+" Nose Y = "+nosey);
 leftwx=result[0].pose.leftWrist.x;
 rightwx=result[0].pose.rightWrist.x;
 difference=floor(leftwx-rightwx)
